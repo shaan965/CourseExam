@@ -158,7 +158,7 @@ class Submission(models.Model):
     # Many-to-Many relationship with choices
     choices = models.ManyToManyField(Choice)
     # Time and date metadata
-    date_submitted  = models.DateField(default=now, editable=False)  
+    date_submitted  = models.DateField(default=now, editable=False)
     time = models.TimeField(default=now, editable=False)
 
     def __str__(self):

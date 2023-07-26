@@ -110,6 +110,7 @@ def enroll(request, course_id):
          # Collect the selected choices from exam form
          # Add each selected choice object to the submission object
          # Redirect to show_exam_result with the submission id
+
 def submit(request, course_id):
     if request.method == "POST":
         user = request.user
